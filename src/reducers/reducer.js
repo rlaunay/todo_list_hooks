@@ -7,7 +7,7 @@ export const todoReducer = (state, { type, payload }) => {
 				if (todo.id === payload) {
 					return { ...todo, completed: !todo.completed };
 				}
-				return todo;
+				return { ...todo };
 			});
 		case 'REMOVE_TODO':
 			return state.filter((todo) => todo.id !== payload);

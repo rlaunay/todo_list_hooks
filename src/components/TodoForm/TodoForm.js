@@ -15,6 +15,7 @@ const TodoForm = () => {
 			type: 'ADD_TODO',
 			payload: { id, text: todo, completed: false },
 		});
+		setTodo('');
 	};
 
 	return (

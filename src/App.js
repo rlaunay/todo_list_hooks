@@ -1,25 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import Store from './store/store';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+import TodoForm from './components/TodoForm/TodoForm';
+import Todos from './components/Todos/Todos';
+
+import classes from './App.module.css';
+
+const App = () => {
+	return (
+		<Store>
+			<div className={classes.App}>
+				<h1>Todo APP</h1>
+				<TodoForm />
+				<Todos />
+			</div>
+		</Store>
+	);
+};
 
 export default App;

@@ -1,0 +1,44 @@
+.Todo {
+	padding: 20px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	border-radius: 10px;
+	box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.4);
+	color: #2c3e50;
+}
+
+.Text {
+	margin-right: auto;
+	font-size: 24px;
+}
+
+.Checked {
+	text-decoration: line-through;
+}
+
+.Checkbox {
+	height: 40px;
+	width: 40px;
+	margin: 0 20px;
+}
+
+.Remove {
+	outline: none;
+	cursor: pointer;
+	font-size: 24px;
+	font-weight: bold;
+	height: 40px;
+	width: 40px;
+	border-radius: 50px;
+	border: 3px solid #2c3e50;
+	color: #2c3e50;
+	transition: 0.5s;
+}
+
+.Remove:active,
+.Remove:hover {
+	border-color: #e74c3c;
+	color: #e74c3c;
+	transform: rotate(360deg);
+}
